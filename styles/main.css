@@ -34,12 +34,9 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 30px;
-}
-
 /* Additional CSS styles for improved presentation */
-section {
+.section {
+    margin-bottom: 30px;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
