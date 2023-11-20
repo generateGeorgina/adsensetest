@@ -52,3 +52,12 @@ section h2 {
     font-size: 24px;
     margin-bottom: 15px;
 }
+
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+  display: block;
+  padding: 1rem;
+}

@@ -3,3 +3,9 @@ function sayHi(name = "there") {
 }
 
 export { sayHi };
+
+function add(a, b) {
+  return a + b;
+}
+
+export { add };
