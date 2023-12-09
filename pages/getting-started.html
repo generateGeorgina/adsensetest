@@ -23,13 +23,11 @@
     <main>
         <section class="section">
             <h3>Jest Error message</h3>
-            <p>When working with Windows computers, you may get an error shown below. For this, you need to use the test command described in step 2, under scripts in the JSON file.</p>
+            <p>When working with Windows computers, you may get an error shown below. For this, you need to use the test command described in step 2, under <i>"scripts": {</i> etc. in the JSON file.</p>
             <pre>
-                <code>
-basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+                <code>basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
           ^^^^^^^
-SyntaxError: missing ) after argument list
-                </code>
+SyntaxError: missing ) after argument list</code>
             </pre>
         </section>
         <section class="section">
