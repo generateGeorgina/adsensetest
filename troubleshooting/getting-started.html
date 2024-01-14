@@ -11,7 +11,11 @@
 </head>
 <body>
     <header>
-        <h1>Getting Started with Jest</h1>
+        <h1>            <pre>
+            <code>basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+      ^^^^^^^
+SyntaxError: missing ) after argument list</code>
+        </pre></h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -22,7 +26,7 @@
     
     <main>
         <section class="section">
-            <h3>Jest Error message</h3>
+            <h3>Getting Started with Jest</h3>
             <p>When working with Windows computers, you may get an error shown below. For this, you need to use the test command described in step 2, under <i>"scripts": {</i> etc. in the JSON file.</p>
             <pre>
                 <code>basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
