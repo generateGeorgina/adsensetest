@@ -80,7 +80,7 @@ export { add };</code>
         <pre>
             <code>import { add } from "./add.js";
 
-describe("Basic maths", () => {
+describe("Basic maths", () =&#62; {
     //test will go here
 });
             </code>
@@ -92,8 +92,8 @@ describe("Basic maths", () => {
             <pre>
                 <code>import { add } from "./add.js";
 
-describe("Basic maths", () => {
-    test("addition", () => {
+describe("Basic maths", () =&#62; {
+    test("addition", () =&#62; {
         expect(add(1, 1)).toBe(2);
     });
 });
