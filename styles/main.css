@@ -9,29 +9,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #fff;
-    color: #0f0f0f;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #0f0f0f;
-    font-weight: bold;
-}
-
 main {
     padding: 20px;
 }
@@ -62,4 +39,8 @@ code {
   padding: 0 3px;
   display: block;
   padding: 1rem;
+}
+
+.center {
+    text-align: center;
 }

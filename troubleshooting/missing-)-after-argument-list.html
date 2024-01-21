@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Jest</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5877198936555033"
+     crossorigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-5877198936555033">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+        <img id="logo" src="../images/Jest-For-Beginners-logo.svg" alt="Jest For Beginners">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./getting-started.html">Getting Started</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="center"><pre>
+$ node --debug-brk ./node_modules/.bin/jest --runInBand
+basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+^^^^^^^
+SyntaxError: missing ) after argument list          
+            </pre></h1>
+        <section class="section">
+            <h2>Fix Windows error in two easy steps</h2>
+            <p>When working with Windows computers, you may get an error shown below. For this, you need to use the path detailed in step 2, under <i>"scripts": {</i> etc. in the JSON file.</p>
+                <pre>
+                    <code>$ node --debug-brk ./node_modules/.bin/jest --runInBand
+basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+          ^^^^^^^
+SyntaxError: missing ) after argument list</code>
+                </pre>
+        </section>
+
+        <section class="section">
+            <h3>1. Install Jest</h3>
+            <p>Open Command Prompt on Windows, navigate to your current project directory. You can use the terminal in VS Code instead, in which case, you should be in the root (the place that contains all the relevant files/folders for your project) of your project already. Run the following command:</p>
+            <code>npm install --save-dev jest</code>
+            <p>You should see a new file, <i>package.json</i> in the root of your project directory.</p>
+        </section>
+        <section class="section">
+            <h3>2. Add the correct path for Windows to your JSON file</h3>
+            <p> Add <i>"type": "module"</i> to your <i>package.json</i> file. This will be within the root curly braces (don't forget the comma). Do the same with <i>"scripts": { "test": node ./node_modules/jest/bin/jest.js --runInBand"}</i> so you can easily run <i>npm run test</i>:</p>
+            <pre>
+                <code>
+{
+    "type": "module",
+    "scripts": {
+            "test": "node ./node_modules/jest/bin/jest.js --runInBand"
+        },
+    
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
+                </code>
+            </pre>
+        </section>
+    </main>
+    
+    <footer>
+        <p>2024 Jest Testing for Beginners</p>
+    </footer>
+</body>
+</html>
