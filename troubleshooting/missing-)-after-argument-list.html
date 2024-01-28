@@ -29,7 +29,7 @@ basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
 SyntaxError: missing ) after argument list          
             </pre></h1>
         <section class="section">
-            <h2>Fix Windows error in two easy steps</h2>
+            <h2>Fix Windows error in three easy steps</h2>
             <p>When working with Windows computers, you may get an error shown below. For this, you need to use the path detailed in step 2, under <i>"scripts": {</i> etc. in the JSON file.</p>
                 <pre>
                     <code>$ node --debug-brk ./node_modules/.bin/jest --runInBand
@@ -62,6 +62,11 @@ SyntaxError: missing ) after argument list</code>
 }
                 </code>
             </pre>
+        </section>
+        <section class="section">
+            <h3>3. Run npm run test</h3>
+            <p>Since you have added the correct path to <i>scripts</i> and saved it under the name <i>test</i> in the previous step, you can now run <i>npm run test</i>.</p>
+            <code>npm run test</code>
         </section>
     </main>
     
