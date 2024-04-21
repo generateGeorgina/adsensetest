@@ -1,3 +1,5 @@
+/* importing css files */
+@import "./global.css";
 header {
     display: flex;
     justify-content: space-between;
@@ -17,13 +19,21 @@ header {
 
 } */
 
+nav {
+    /* nav bar to appear above every other element and is not obscured */
+    z-index: 999;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* DROPDOWN MENU */
+
 nav ul li {
-    display: inline;
+    /* So that menu item appear one below the other */
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -31,4 +41,33 @@ nav ul li a {
     text-decoration: none;
     color: #0f0f0f;
     font-weight: bold;
+    /* so that the link takes up the entire width of the drop-down, not just the text itself */
+    display: block;
+}
+
+nav ul li ul {
+    /* default position value is 'static' which does not work with the top property */
+    position: relative;
+    /* menu's position remains relative to the parent element - the nav bar
+    position: absolute;
+    /* puts ul elements at immediately beneath the parent container, which is the li element that will have the dropdown */
+    top: 100%;
+    /* hide until user hovers */
+    display: none;
+}
+
+nav ul li ul li {
+    /* ensures list items appear one on top of each other */
+    display: block;
+}
+
+
+nav ul li:hover ul {
+    /* ensures that dropdown list appears stacked below navbar options */
+    display: block;
+}
+
+nav ul li ul li a:hover {
+    /* highlight text when user hovers over it */
+    background-color: var(--code-grey);
 }
